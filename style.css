@@ -1,0 +1,136 @@
+body {
+    padding: 20px;
+    background-color: rgb(1, 1, 41);
+    color: white;
+    display: block;
+    margin: 8px;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    position: relative;
+}
+.container{
+    display: none;
+}
+.chart-and-display-section{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*heading*/
+.header{
+    width : 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.header h1 {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+
+
+/* CHART SECTION */
+.chart-section {
+    /* background-color: rgb(34, 34, 34); */
+    background-color: rgb(1, 1, 69);
+    border-radius: 10px;
+    width: 60%;
+    display: block;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.buttons button {
+    background-color: rgb(2, 2, 116);
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#stockChart {
+    width: 80%; /* Set the width of the canvas */
+    margin: 0 auto; /* Center align the canvas within its parent div */
+}
+.chart-tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgb(1, 1, 69);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 12px;
+}
+
+
+/* detail section */
+.display-section{
+    margin-top: 20px;
+    width: 60%;
+    display: block;
+}
+.display-section span {
+    margin : 0px 10px;
+}
+#stockName{
+    font-size: 20px;
+    font-weight: bolder;
+}
+#profit {
+    color: green;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#bookValue {
+    font-size: 20px;
+    font-weight: bolder;
+}
+.display-section p {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* list-section*/
+
+.list-section {
+    position: absolute;
+    right: 80px;
+    top : 0px;
+}
+.stockName_button{
+    position: relative;
+    right: 0px;
+    height: 30px;
+    width: 60px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(1, 1, 102);
+    cursor: pointer;
+}
+.stockName_button:hover {
+    background-color: rgb(1, 1, 10);
+}
+.list_item span {
+    margin: 10px;
+    font-size: 16px;
+}
